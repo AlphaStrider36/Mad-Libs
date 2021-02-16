@@ -25,7 +25,7 @@ while Q1 == "divide":
 while Q1 == "multiply":
     Q8 = input("what is the first number? ")
     Q9 = input("What is the seconed number? ")
-    print (float (Q8) * float (Q9))
+    print (f'Your Answer is : {float (Q8) * float (Q9)}')
 
 #cube of a number
 
