@@ -1,4 +1,4 @@
-# Mad Libs
+# Mad-Libs
 
 A simple and fun python script that showcases the popular game "Mad Libs"
 
