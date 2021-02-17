@@ -21,6 +21,8 @@ Select a topic:
 8. The WallMart Difference 
 9. There Was An Old Woman
 10. The Three Blind Mice
+11. Yankee Doodle
+12. The Cat And The Fiddle
 Just write the number of the topic you want to play.
 ```
 Now you have to enter the number before the topic name.
