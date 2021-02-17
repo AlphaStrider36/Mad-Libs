@@ -14,7 +14,8 @@ if q1 == ('p'):
     print ('9. There Was An Old Woman')
     print ('10. The Three Blind Mice')
     print ('11. Yankee Doodle')
-    print ('12.The Cat And The Fiddle')
+    print ('12. The Cat And The Fiddle')
+    print ('13. The New Day')
     q5= input ('Just write the number of the topic you want to play. ')
 while q5 == '1':
     q6= input ('NOUN (PLURAL) ')
@@ -149,3 +150,11 @@ while q5== '12':
     q122= input ('ADJECTIVE ')
     q123= input ('NOUN ')
     print (f'Hey, {q118}, {q118}! The {q119} and the {q120}, The cow jumped over the {q121}; The {q122} dog laughed To see such sport, And the {q123} ran away with the spoon.')
+while q5== '13':
+    q124= input ('VERB ENDING IN ING ')
+    q125= input ('VERB ENDING IN ING ')
+    q126= input ('VERB ENDING IN ED ')
+    q127= input ('PLACE ')
+    q128= input ('VERB ')
+    q129= input ('VERB ')
+    print (f'Tommorrow is a new day full of new suprises and new adventures. Such as {q124} and {q125}. Tommorrow leads you to the life you haven`t {q126} yet. So why not plan to live today with the most adventurious and positive outlook because today is yesterday`s tommorrow and we all know that it`s good to do things differently. So let`s go to {q127} and {q128} with someone cool. Or you could just let it {q129} right by.')
