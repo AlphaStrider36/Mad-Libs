@@ -1,3 +1,8 @@
+import builtins
+import colorama
+from colorama import Fore, Back, Style
+from colorama.initialise import init
+colorama.init(autoreset=True)
 q1= input ("Hello there! Welcome to Mad Libs! Press P to begin or Q to quit. ")
 if q1 == ('q'):
     quit
@@ -24,7 +29,7 @@ while q5 == '1':
     q9= input ('PLACE ')
     q10= input ('VERB ')
     q11= input ('NOUN ')
-    print ('In the book War of the ' + (q6) + ', the main character is an anonymous ' + (q7) + ' who records the arrival of ' + (q8) + ' in ' + (q9) + '. Needless to say, havoc reigns as the ' + (q8) + ' continue to ' + (q10) + ' everything in sight, until they are killed by the common ' + (q11) + '.')
+    print (f'In the book War of the {Fore.BLUE}{q6}{Fore.RESET}, the main character is an anonymous {Fore.BLUE}{q7}{Fore.RESET} who records the arrival of {Fore.BLUE}{q8}{Fore.BLUE} in {Fore.BLUE}{q9}{Fore.RESET}. Needless to say, havoc reigns as the {Fore.BLUE}{q8}{Fore.RESET} continue to {Fore.BLUE}{q10}{Fore.reset} everything in sight, until they are killed by the common {Fore.BLUE}{q11}{Fore.RESET}.')
 while q5 == '2':
     q12= input ("NOUN ")
     q13= input ("NOUN (PLURAL) ")
@@ -32,7 +37,7 @@ while q5 == '2':
     q15= input ("PLACE ")
     q16= input ("ADJECTIVE ")
     q17= input ("NOUN ")
-    print (f'Be kind to your {q12}-footed {q13} For a duck may be somebody`s {q14}, Be kind to your {q14} in {q15} Where the weather is always {q16}. You may think that this is the {q17}, Well it is.')
+    print (f'Be kind to your {Fore.BLUE}{q12}{Fore.RESET}-footed {Fore.BLUE}{q13}{Fore.RESET} For a duck may be somebody`s {Fore.BLUE}{q14}{Fore.RESET}, Be kind to your {Fore.BLUE}{q14}{Fore.RESET} in {Fore.BLUE}{q15}{Fore.RESET} Where the weather is always {Fore.BLUE}{q16}{Fore.RESET}. You may think that this is the {Fore.BLUE}{q17}{Fore.RESET}, Well it is.')
 while q5== '3':
     q18= input ('ADVERB	')
     q19= input ('NOUN ')
@@ -48,7 +53,7 @@ while q5== '3':
     q29= input ('OCCUPATION ')
     q30= input ('BODY PART (PLURAL) ')
     q31= input ('BODY PART ')
-    print (f'In order to wash your face {q18}, you must wet your {q19} in warm {q20}. Then, {q21} it across your face {q22} times. This will wash off any remainig {q23}. When you are done you should {q24} the cloth in {q25} water to clean it. You should also wash your face with a {q26} to keep it smooth and shiny. This will keep also keep away {q27}. Don`t worry. It is normal to experience {q28} the first time you try this. Consult your {q29} if you break out in {q30}. This works well on your {q31} too!')
+    print (f'In order to wash your face {Fore.BLUE}{q18}{Fore.RESET}, you must wet your {Fore.BLUE}{q19}{Fore.RESET} in warm {Fore.BLUE}{q20}{Fore.RESET}. Then, {Fore.BLUE}{q21}{Fore.RESET} it across your face {Fore.BLUE}{q22}{Fore.RESET} times. This will wash off any remainig {Fore.BLUE}{q23}{Fore.RESET}. When you are done you should {Fore.BLUE}{q24}{Fore.RESET} the cloth in {Fore.BLUE}{q25}{Fore.RESET} water to clean it. You should also wash your face with a {Fore.BLUE}{q26}{Fore.RESET} to keep it smooth and shiny. This will keep also keep away {Fore.BLUE}{q27}{Fore.RESET}. Don`t worry. It is normal to experience {Fore.BLUE}{q28}{Fore.RESET} the first time you try this. Consult your {Fore.BLUE}{q29}{Fore.RESET} if you break out in {Fore.BLUE}{q30}{Fore.RESET}. This works well on your {Fore.BLUE}{q31}{Fore.RESET} too!')
 while q5== '4':
     q33= input ('VERB ENDING IN "ING" ')
     q34= input ('VERB ENDING IN "ED" ')
@@ -61,7 +66,7 @@ while q5== '4':
     q41= input ('NOUN ')
     q42= input ('PLACE ')
     q43= input ('NUMBER ')
-    print (f'I was {q33} along the sidewalk when an alien {q34} me. I was {q35} into their {q36} and it blasted off. Then the alien asked me to {q37} on the TV. I was suprised they spoke english. the aliens had a pet {q38}. We ordered a {q39} and it tasted good. As we came back into the galaxy, one alien asked me if I wanted a {q40}. I said no but I would like a {q41}. He got it for me and then dropped me off at my {q41}. then I realized I had been gone for {q42} years! ')
+    print (f'I was {Fore.BLUE}{q33}{Fore.RESET} along the sidewalk when an alien {Fore.BLUE}{q34}{Fore.RESET} me. I was {Fore.BLUE}{q35}{Fore.RESET} into their {Fore.BLUE}{q36}{Fore.RESET} and it blasted off. Then the alien asked me to {Fore.BLUE}{q37}{Fore.RESET} on the TV. I was suprised they spoke english. the aliens had a pet {Fore.BLUE}{q38}{Fore.RESET}. We ordered a {Fore.BLUE}{q39}{Fore.RESET} and it tasted good. As we came back into the galaxy, one alien asked me if I wanted a {Fore.BLUE}{q40}{Fore.RESET}. I said no but I would like a {Fore.BLUE}{q41}{Fore.RESET}. He got it for me and then dropped me off at my {Fore.BLUE}{q42}{Fore.RESET}. Then I realized I had been gone for {Fore.BLUE}{q43}{Fore.RESET} years! ')
 while q5== '5':
     q45= input ('VERB ')
     q46= input ('ADJECTIVE ')
@@ -79,13 +84,13 @@ while q5== '5':
     q58 = input ('ADJECTIVE ')
     q59 = input ('VERB ENDING IN "ING" ')
     q60 = input ('VERB ')
-    print (f'Good morning, Mr. Hunt. Your mission, should you choose to {q45} it, involves the recovery of a {q46} item designated "{q47}." You may select any {q48} {q49}, but it is {q50} that the third member of your {q49} be Nyah Nordoff-Hall. She is a {q50}, and a highly capable professional {q51}. You have {q52} to {q53} Miss Hall and meet me in {q54} to receive your assignment. As always, should any member of your {q49} be caught or {q55}, the {q56} will disavow all knowledge of your {q57}. And Mr. Hunt, the next time you go on holiday, please be {q58} enough to let us know where you`re {q59}. This message will self-{q60} in five seconds.')
+    print (f'Good morning, Mr. Hunt. Your mission, should you choose to {Fore.BLUE}{q45}{Fore.RESET} it, involves the recovery of a {Fore.BLUE}{q46}{Fore.RESET} item designated "{Fore.BLUE}{q47}{Fore.RESET}." You may select any {Fore.BLUE}{q48}{Fore.RESET} {Fore.BLUE}{q49}{Fore.RESET}, but it is {Fore.BLUE}{q50}{Fore.RESET} that the third member of your {Fore.BLUE}{q49}{Fore.RESET} be Nyah Nordoff-Hall. She is a {Fore.BLUE}{q50}{Fore.RESET}, and a highly capable professional {Fore.BLUE}{q51}{Fore.RESET}. You have {Fore.BLUE}{q52}{Fore.RESET} to {Fore.BLUE}{q53}{Fore.RESET} Miss Hall and meet me in {Fore.BLUE}{q54}{Fore.RESET} to receive your assignment. As always, should any member of your {Fore.BLUE}{q49}{Fore.RESET} be caught or {Fore.BLUE}{q55}{Fore.RESET}, the {Fore.BLUE}{q56}{Fore.RESET} will disavow all knowledge of your {Fore.BLUE}{q57}{Fore.RESET}. And Mr. Hunt, the next time you go on holiday, please be {Fore.BLUE}{q58}{Fore.RESET} enough to let us know where you`re {Fore.BLUE}{q59}{Fore.RESET}. This message will self-{Fore.BLUE}{q60}{Fore.RESET} in five seconds.')
 while q5== '6':
     q62= input ('ADJECTIVE ')
     q63= input ('NOUN ')
     q64= input ('ANIMAL ')
     q65= input ('NOISE ')
-    print (f'{q62} Macdonald had a {q63}, E-I-E-I-O and on that {q63} he had a {q64}, E-I-E-I-O with a {q65} {q65} here and a {q65} {q65} there, here a {q65}, there a {q65}, everywhere a {q65} {q65}, {q62} Macdonald had a {q63}, E-I-E-I-O.')
+    print (f'{Fore.BLUE}{q62}{Fore.RESET} Macdonald had a {Fore.BLUE}{q63}{Fore.RESET}, E-I-E-I-O and on that {Fore.BLUE}{q63}{Fore.RESET} he had a {Fore.BLUE}{q64}{Fore.RESET}, E-I-E-I-O with a {Fore.BLUE}{q65}{Fore.RESET} {Fore.BLUE}{q65}{Fore.RESET} here and a {Fore.BLUE}{q65}{Fore.RESET} {Fore.BLUE}{q65}{Fore.RESET} there, here a {Fore.BLUE}{q65}{Fore.RESET}, there a {Fore.BLUE}{q65}{Fore.RESET}, everywhere a {Fore.BLUE}{q65}{Fore.RESET} {Fore.BLUE}{q65}{Fore.RESET}, {Fore.BLUE}{q62}{Fore.RESET} Macdonald had a {Fore.BLUE}{q63}{Fore.RESET}, E-I-E-I-O.')
 while q5 == '7':
     q67= input ('COLOR ')
     q68= input ('SUPERLATIVE (ENDING IS "EST") ')
@@ -97,7 +102,7 @@ while q5 == '7':
     q74= input ('ADJECTIVE ')
     q75= input ('ADJECTIVE ')
     q76= input ('ADJECTIVE ')
-    print (f'The {q67} Dragon is the {q68} Dragon of all. It has {q69} {q70}, and a/an {q71} shaped like a/an {q72}. It loves to eat {q73}, although it will feast on nearly anything. It is {q74} and {q75}. You must be {q76} around it, or you may end up as it`s meal!')
+    print (f'The {Fore.BLUE}{q67}{Fore.RESET} Dragon is the {Fore.BLUE}{q68}{Fore.RESET} Dragon of all. It has {Fore.BLUE}{q69}{Fore.RESET} {Fore.BLUE}{q70}{Fore.RESET}, and a/an {Fore.BLUE}{q71}{Fore.RESET} shaped like a/an {Fore.BLUE}{q72}{Fore.RESET}. It loves to eat {Fore.BLUE}{q73}{Fore.RESET}, although it will feast on nearly anything. It is {Fore.BLUE}{q74}{Fore.RESET} and {Fore.BLUE}{q75}{Fore.RESET}. You must be {Fore.BLUE}{q76}{Fore.RESET} around it, or you may end up as it`s meal!')
 while q5== '8':
     q78= input ('VERB ')
     q79= input ('ADJECTIVE ')
@@ -114,14 +119,14 @@ while q5== '8':
     q90= input ('ADJECTIVE ')
     q91= input ('ADJECTIVE ')
     q92= input ('NOUN (PLURAL) ')
-    print (f'Come {q78} at WALMART, where you`ll receive {q79} discounts on all of your favorite brand name {q80}. Our {q81} and {q82} associates are there to {q83} you {q84} hours a day. Here you will find {q85} prices on the {q86} you need. {q87} for the moms, {q88} for the kids and all the latest electronics for the {q89}. So come on down to your {q90} {q91} WALMART where the {q92} come first.')
+    print (f'Come {Fore.BLUE}{q78}{Fore.RESET} at WALMART, where you`ll receive {Fore.BLUE}{q79}{Fore.RESET} discounts on all of your favorite brand name {Fore.BLUE}{q80}{Fore.RESET}. Our {Fore.BLUE}{q81}{Fore.RESET} and {Fore.BLUE}{q82}{Fore.RESET} associates are there to {Fore.BLUE}{q83}{Fore.RESET} you {Fore.BLUE}{q84}{Fore.RESET} hours a day. Here you will find {Fore.BLUE}{q85}{Fore.RESET} prices on the {Fore.BLUE}{q86}{Fore.RESET} you need. {Fore.BLUE}{q87}{Fore.RESET} for the moms, {Fore.BLUE}{q88}{Fore.RESET} for the kids and all the latest electronics for the {Fore.BLUE}{q89}{Fore.RESET}. So come on down to your {Fore.BLUE}{q90}{Fore.RESET} {Fore.BLUE}{q91}{Fore.RESET} WALMART where the {Fore.BLUE}{q92}{Fore.RESET} come first.')
 while q5== '9':
     q94= input ('ADJECTIVE ')
     q95= input ('NOUN ')
     q96= input ('NOUN (PLURAL) ')
     q97= input ('NOUN ')
     q98= input ('VERB ENDING IN "ED" ')
-    print (f'There was a/an {q94} woman who lived in a/an {q95}. She had so many {q96} she didn`t know what to do. She gave them some broth without any {q97}. She {q98} them all soundly and put them to bed.')
+    print (f'There was a/an {Fore.BLUE}{q94}{Fore.RESET} woman who lived in a/an {Fore.BLUE}{q95}{Fore.RESET}. She had so many {Fore.BLUE}{q96}{Fore.RESET} she didn`t know what to do. She gave them some broth without any {Fore.BLUE}{q97}{Fore.RESET}. She {Fore.BLUE}{q98}{Fore.RESET} them all soundly and put them to bed.')
 while q5== '10':
     q100= input ('NUMBER ')
     q101= input ('ADJECTIVE ')
@@ -131,7 +136,7 @@ while q5== '10':
     q105= input ('BODY PART (PLURAL) ')
     q106= input ('VERB ENDING IN "ING" ')
     q107= input ('NOUN ')
-    print (f'{q100} {q101} mice! See how they {q102}! They all ran after the {q103}`s {q104}, Who cut off their {q105} with a {q106} knife. Did you ever see such a thing in your {q107} As {q100} {q101} mice?') 
+    print (f'{Fore.BLUE}{q100}{Fore.RESET} {Fore.BLUE}{q101}{Fore.RESET} mice! See how they {Fore.BLUE}{q102}{Fore.RESET}! They all ran after the {Fore.BLUE}{q103}{Fore.RESET}`s {Fore.BLUE}{q104}{Fore.RESET}, Who cut off their {Fore.BLUE}{q105}{Fore.RESET} with a {Fore.BLUE}{q106}{Fore.RESET} knife. Did you ever see such a thing in your {Fore.BLUE}{q107}{Fore.RESET} As {Fore.BLUE}{q100}{Fore.RESET} {Fore.BLUE}{q101}{Fore.RESET} mice?') 
 while q5== '11':
     q109= input ('NOUN ')
     q110= input ('VERB ENDING IN "ING" ')
@@ -141,7 +146,7 @@ while q5== '11':
     q114= input ('ADJECTIVE ')
     q115= input ('NOUN ')
     q116= input ('NOUN (PLURAL)	')
-    print (f'Yankee Doodle went to {q109}, a-{q110} on a {q111}; Stuck a feather in his {q112} and called it {q113}. Yankee Doodle keep it up, Yankee Doodle {q114}, Mind the {q115} and the step and with the {q116} be handy.')
+    print (f'Yankee Doodle went to {Fore.BLUE}{q109}{Fore.RESET}, a-{Fore.BLUE}{q110}{Fore.RESET} on a {Fore.BLUE}{q111}{Fore.RESET}; Stuck a feather in his {Fore.BLUE}{q112}{Fore.RESET} and called it {Fore.BLUE}{q113}{Fore.RESET}. Yankee Doodle keep it up, Yankee Doodle {Fore.BLUE}{q114}{Fore.RESET}, Mind the {Fore.BLUE}{q115}{Fore.RESET} and the step and with the {Fore.BLUE}{q116}{Fore.RESET} be handy.')
 while q5== '12':
     q118= input ('SILLY WORD ')
     q119= input ('ANIMAL')
@@ -149,7 +154,7 @@ while q5== '12':
     q121= input ('NOUN ')
     q122= input ('ADJECTIVE ')
     q123= input ('NOUN ')
-    print (f'Hey, {q118}, {q118}! The {q119} and the {q120}, The cow jumped over the {q121}; The {q122} dog laughed To see such sport, And the {q123} ran away with the spoon.')
+    print (f'Hey, {Fore.BLUE}{q118}{Fore.RESET}, {Fore.BLUE}{q118}{Fore.RESET}! The {Fore.BLUE}{q119}{Fore.RESET} and the {Fore.BLUE}{q120}{Fore.RESET}, The cow jumped over the {Fore.BLUE}{q121}{Fore.RESET}; The {Fore.BLUE}{q122}{Fore.RESET} dog laughed To see such sport, And the {Fore.BLUE}{q123}{Fore.RESET} ran away with the spoon.')
 while q5== '13':
     q124= input ('VERB ENDING IN ING ')
     q125= input ('VERB ENDING IN ING ')
@@ -157,4 +162,4 @@ while q5== '13':
     q127= input ('PLACE ')
     q128= input ('VERB ')
     q129= input ('VERB ')
-    print (f'Tommorrow is a new day full of new suprises and new adventures. Such as {q124} and {q125}. Tommorrow leads you to the life you haven`t {q126} yet. So why not plan to live today with the most adventurious and positive outlook because today is yesterday`s tommorrow and we all know that it`s good to do things differently. So let`s go to {q127} and {q128} with someone cool. Or you could just let it {q129} right by.')
+    print (f'Tommorrow is a new day full of new suprises and new adventures. Such as {Fore.BLUE}{q124}{Fore.RESET} and {Fore.BLUE}{q125}{Fore.RESET}. Tommorrow leads you to the life you haven`t {Fore.BLUE}{q126}{Fore.RESET} yet. So why not plan to live today with the most adventurious and positive outlook because today is yesterday`s tommorrow and we all know that it`s good to do things differently. So let`s go to {Fore.BLUE}{q127}{Fore.RESET} and {Fore.BLUE}{q128}{Fore.RESET} with someone cool. Or you could just let it {Fore.BLUE}{q129}{Fore.RESET} right by.')
