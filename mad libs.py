@@ -1,4 +1,3 @@
-import builtins
 import colorama
 from colorama import Fore, Back, Style
 from colorama.initialise import init
@@ -6,7 +5,7 @@ colorama.init(autoreset=True)
 q1= input ("Hello there! Welcome to Mad Libs! Press P to begin or Q to quit. ")
 if q1 == ('q'):
     quit
-if q1 == ('p'):
+while q1 == ('p'):
     print ('Select a topic:')
     print ('1. Greetings, Earthlings!')
     print ('2. Be Kind')
