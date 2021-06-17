@@ -3,7 +3,7 @@
 A simple and fun python script that showcases the popular game "Mad Libs"
 
 ## How to use the script:
--First open the file ```mad_libs```
+- First open the file ```mad_libs```
 
 - When you open the file, you get greeted by the following message; `Hello there! Welcome to Mad Libs! Press P to begin or Q to quit.`, you now have two options:
     - `q`: if you want to leave the game you can press q. 
