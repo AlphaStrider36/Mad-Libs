@@ -62,6 +62,8 @@ Select a topic:
 18. Pizza Parlor
 19. J.R.R Tolkien
 20. Valentine`s Cards
+21. Dictionary Disasters 1
+22. Movie Quotes 1
 Just write the number of the topic you want to play. 4
 VERB ENDING IN "ING" eating
 VERB ENDING IN "ED" walked
