@@ -32,6 +32,8 @@ Select a topic:
 18. Pizza Parlor
 19. J.R.R Tolkien
 20. Valentine`s Cards
+21. Dictionary Disasters 1
+22. Movie Quotes 1
 Just write the number of the topic you want to play.
 ```
 Now you have to enter the number before the topic name.
@@ -77,3 +79,5 @@ move on the TV. I was suprised they spoke english. the aliens had a pet guinea p
 back into the galaxy, one alien asked me if I wanted a chair. I said no but I would like a chair. He got it for me and then dropped
 me off at my chair. then I realized I had been gone for Las Vegas years!
 ```
+
+Found bugs? report it [here](https://github.com/AlphaStrider36/Mad-Libs/issues/new)
