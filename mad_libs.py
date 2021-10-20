@@ -16,7 +16,7 @@ while True:
 4. Abducted by Aliens
 5. Popular Video Game
 6. Old Macdonald
-7. Drgons
+7. Dragons
 8. The WallMart Difference
 9. There Was An Old Woman
 10. The Three Blind Mice
@@ -31,7 +31,8 @@ while True:
 19. J.R.R Tolkien
 20. Valentine`s Cards
 21. Dictionary Disasters 1
-22. Movie Quotes 1''')
+22. Movie Quotes 1
+''')
     topic_selection = input(
         'Just write the number of the topic you want to play. ')
 
@@ -274,13 +275,17 @@ while True:
 
     elif topic_selection == '20':
         q178 = input('NOUN ')
-        q179 = input('NOUN (PLURAL)')
+        q179 = input('NOUN (PLURAL) ')
         q180 = input('ADJECTIVE ')
         q181 = input('VERB ')
         q182 = input('NOUN (PLURAL) ')
         q183 = input('COLOR ')
         q184 = input('BODY PART ')
-        print(f'Be my {Fore.RESET}{q178}{Fore.RESET} {Fore.BLUE}{q179}{Fore.RESET} make the world go {Fore.BLUE}{q180}{Fore.RESET} Pickachu says "I {Fore.BLUE}{q181}{Fore.RESET} you" I love {Fore.BLUE}{q182}{Fore.RESET}, {Fore.BLUE}{q183}{Fore.RESET} does too You make my {Fore.BLUE}{q184}{Fore.RESET} flutter')
+        print(f''''Be my {Fore.BLUE}{q178}{Fore.RESET} 
+{Fore.BLUE}{q179}{Fore.RESET} make the world go {Fore.BLUE}{q180}{Fore.RESET} 
+Pickachu says "I {Fore.BLUE}{q181}{Fore.RESET} you" 
+I love {Fore.BLUE}{q182}{Fore.RESET}, {Fore.BLUE}{q183}{Fore.RESET} does too 
+You make my {Fore.BLUE}{q184}{Fore.RESET} flutter''')
 
     elif topic_selection == '21':
         q185 = input('ADJECTIVE ')
@@ -299,5 +304,23 @@ Adj. Having a/an {Fore.BLUE}{q185}{Fore.RESET} {Fore.BLUE}{q186}{Fore.RESET} and
 N. A/An {Fore.BLUE}{q188}{Fore.RESET} having a/an {Fore.BLUE}{q185}{Fore.RESET} {Fore.BLUE}{q186}{Fore.RESET} and light {Fore.BLUE}{q187}{Fore.RESET}. Obdurate
 Adj. {Fore.BLUE}{q189}{Fore.RESET} against feeling; {Fore.BLUE}{q189}{Fore.RESET} in {Fore.BLUE}{q190}{Fore.RESET} or wickedness; not giving in to {Fore.BLUE}{q191}{Fore.RESET}; showing unfeeling {Fore.BLUE}{q192}{Fore.RESET} to tender {Fore.BLUE}{q193}{Fore.RESET}. Affuage
 N. The right to cut {Fore.BLUE}{q194}{Fore.RESET} in a {Fore.BLUE}{q195}{Fore.RESET} for a family fire.''')
+
     elif topic_selection == '22':
-        q196 = input
+        q196 = input('VERB ')
+        q198 = input('VERB ENDING IN "ING" ')
+        q199 = input('NOUN ')
+        q200 = input('ADJECTIVE ')
+        q201 = input('OCCUPATION ')
+        q202 = input('ANIMAL ')
+        q203 = input('ADJECTIVE	')
+        q204 = input('VERB ENDING IN "ING" ')
+        q205 = input('NOUN ')
+        print(f'''"               My name is {Fore.BLUE}{q196}{Fore.RESET}; learn it well, for it`s the {Fore.BLUE}{q198}{Fore.RESET} sound of your {Fore.BLUE}{q199}{Fore.RESET}."
+
+                  "I told Killian I`d be {Fore.BLUE}{q200}. I wouldn`t want to be a/an {Fore.BLUE}{q201}."
+
+                  "I`m a cybernetic {Fore.BLUE}{q202}: living tissue over a/an {Fore.BLUE}{q203} endoskeleton."
+
+                  "If things have gone wrong, I`m {Fore.BLUE}{q204} myself, and you`ve got a wet {q205} wrapped around your head."
+
+                                        - Arnold Schwarzenegger''')
