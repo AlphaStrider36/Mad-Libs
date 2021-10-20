@@ -2,7 +2,7 @@
 
 A simple and fun python script that showcases the popular game "Mad Libs"
 
-# Modules required: [colorama](https://pypi.org/project/colorama/)
+## Modules required: [colorama](https://pypi.org/project/colorama/)
 
 ## How to use the script:
 - First open the file ```mad_libs```
